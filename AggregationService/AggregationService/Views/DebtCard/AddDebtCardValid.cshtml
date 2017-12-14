@@ -1,0 +1,235 @@
+﻿@model AggregationService.Models.ModelsForView.DebtCardInfoFullFake
+
+@{
+    ViewData["Title"] = "AddDebtCardValid";
+}
+
+<h2>AddDebtCardValid</h2>
+
+<h4>DebtCardInfoFull</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddDebtCardValid" onsubmit="handleSubmit(this);return false;">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LibrarySystemName" class="control-label"></label>
+                <input asp-for="LibrarySystemName" class="form-control anyfields LibrarySystem" />
+                <span asp-validation-for="LibrarySystemName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CardName" class="control-label"></label>
+                <input asp-for="CardName" class="form-control anyfields" />
+                <span asp-validation-for="CardName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymentPerDay" class="control-label"></label>
+                <input asp-for="PaymentPerDay" class="form-control anyfields" />
+                <span asp-validation-for="PaymentPerDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymentDefault" class="control-label"></label>
+                <input asp-for="PaymentDefault" class="form-control anyfields" />
+                <span asp-validation-for="PaymentDefault" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control anyfields" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AuthorName" class="control-label"></label>
+                <input asp-for="AuthorName" class="form-control anyfields Author" />
+                <span asp-validation-for="AuthorName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BookName" class="control-label"></label>
+                <input asp-for="BookName" class="form-control anyfields Book" />
+                <span asp-validation-for="BookName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LibraryName" class="control-label"></label>
+                <input asp-for="LibraryName" class="form-control anyfields Library" />
+                <span asp-validation-for="LibraryName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+
+        <br />
+        <br />
+        <button type="button" class="btn btn-info" onclick="show();">Author-ID Info</button>
+        <br />
+        <ul id="list" class="list-group" style="display: none;">
+            @foreach (AggregationService.Models.BookService.Author c in Model.Authors)
+            {
+                @Html.Raw("<li class='list-group-item list-group-item-info'>" + c.AuthorName + "</li>");
+            }
+        </ul>
+
+        <br />
+        <br />
+        <button type="button" class="btn btn-info" onclick="show2();">LibrarySystemName Info</button>
+        <br />
+        <ul id="list2" class="list-group" style="display: none;">
+            @foreach (AggregationService.Models.DebtCardService.LibrarySystem c in Model.LibrarySystemNames)
+            {
+                @Html.Raw("<li class='list-group-item list-group-item-info'>" + c.LibrarySystemName + "</li>");
+            }
+        </ul>
+
+        <br />
+        <br />
+        <button type="button" class="btn btn-info" onclick="show3();">Books Info</button>
+        <br />
+        <ul id="list3" class="list-group" style="display: none;">
+            @foreach (AggregationService.Models.BookService.Book c in Model.Books)
+            {
+                @Html.Raw("<li class='list-group-item list-group-item-info'>" + c.BookName + "</li>");
+            }
+        </ul>
+
+        <br />
+        <br />
+        <button type="button" class="btn btn-info" onclick="show4();">Librarys Info</button>
+        <br />
+        <ul id="list4" class="list-group" style="display: none;">
+            @foreach (AggregationService.Models.LibraryService.Library c in Model.Librarys)
+            {
+                @Html.Raw("<li class='list-group-item list-group-item-info'>" + c.LibraryName + "</li>");
+            }
+        </ul>
+        <br />
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+<script>
+    function handleSubmit(f) {
+        var toSubmit = true;
+
+        var anyFieldsToCheck = document.getElementsByClassName("anyfields");
+        for (var i = 0; i < anyFieldsToCheck.length; i++) {
+            anyFieldsToCheck[i].style.boxShadow = "";
+            if (anyFieldsToCheck[i].value.length < 1 && anyFieldsToCheck[i].value < 1) {
+                toSubmit = false;
+                anyFieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+        var Authors = getAllowedAuthors();
+        var LibrarySystems = getAllowedLibrarySystems();
+        var Books = getAllowedBooks();
+        var Librarys = getAllowedLibrarys();
+        
+
+        var fieldsToCheck = document.getElementsByClassName("Author");
+        for (var i = 0; i < fieldsToCheck.length; i++) {
+            fieldsToCheck[i].style.boxShadow = "";
+            if (!isAllowed(fieldsToCheck[i].value, Authors)) {
+                toSubmit = false;
+                fieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+        
+        var fieldsToCheck = document.getElementsByClassName("LibrarySystem");
+        for (var i = 0; i < fieldsToCheck.length; i++) {
+            fieldsToCheck[i].style.boxShadow = "";
+            if (!isAllowed(fieldsToCheck[i].value, LibrarySystems)) {
+                toSubmit = false;
+                fieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+
+
+        var fieldsToCheck = document.getElementsByClassName("Book");
+        for (var i = 0; i < fieldsToCheck.length; i++) {
+            fieldsToCheck[i].style.boxShadow = "";
+            if (!isAllowed(fieldsToCheck[i].value, Books)) {
+                toSubmit = false;
+                fieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+
+
+        var fieldsToCheck = document.getElementsByClassName("Library");
+        for (var i = 0; i < fieldsToCheck.length; i++) {
+            fieldsToCheck[i].style.boxShadow = "";
+            if (!isAllowed(fieldsToCheck[i].value, Librarys)) {
+                toSubmit = false;
+                fieldsToCheck[i].style.boxShadow = "0 0 10px red";
+            }
+        }
+
+        if (toSubmit) f.submit();
+    }
+
+
+
+    function getAllowedAuthors() {
+        Authors = document.getElementById('list').getElementsByTagName('li');
+        return Authors;
+    }
+
+    function getAllowedLibrarySystems() {
+        LibrarySystems = document.getElementById('list2').getElementsByTagName('li');
+        return LibrarySystems;
+    }
+
+    function getAllowedBooks() {
+        Books = document.getElementById('list3').getElementsByTagName('li');
+        return Books;
+    }
+
+    function getAllowedLibrarys() {
+        Librarys = document.getElementById('list4').getElementsByTagName('li');
+        return Librarys;
+    }
+
+    function isAllowed(word, arr) {
+        var allowed = false;
+        for (var j = 0; j < arr.length; j++) {
+            if (arr[j].innerHTML == word) {
+                allowed = true;
+            }
+        }
+        return allowed;
+    }
+
+    function show() {
+        var list = document.getElementById("list");
+        if (list.style.display == "none")
+            list.style.display = "inline";
+        else
+            list.style.display = "none";
+    }
+
+    function show2() {
+        var list = document.getElementById("list2");
+        if (list.style.display == "none")
+            list.style.display = "inline";
+        else
+            list.style.display = "none";
+    }
+
+    function show3() {
+        var list = document.getElementById("list3");
+        if (list.style.display == "none")
+            list.style.display = "inline";
+        else
+            list.style.display = "none";
+    }
+
+    function show4() {
+        var list = document.getElementById("list4");
+        if (list.style.display == "none")
+            list.style.display = "inline";
+        else
+            list.style.display = "none";
+    }
+</script>
+

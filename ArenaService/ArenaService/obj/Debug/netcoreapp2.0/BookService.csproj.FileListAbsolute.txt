@@ -1,0 +1,13 @@
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\bin\Debug\netcoreapp2.0\BookService.deps.json
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\bin\Debug\netcoreapp2.0\BookService.runtimeconfig.json
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\bin\Debug\netcoreapp2.0\BookService.runtimeconfig.dev.json
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\bin\Debug\netcoreapp2.0\BookService.dll
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\bin\Debug\netcoreapp2.0\BookService.pdb
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\bin\Debug\netcoreapp2.0\RabbitModels.dll
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\bin\Debug\netcoreapp2.0\RabbitModels.pdb
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\obj\Debug\netcoreapp2.0\BookService.csprojResolveAssemblyReference.cache
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\obj\Debug\netcoreapp2.0\BookService.csproj.CoreCompileInputs.cache
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\obj\Debug\netcoreapp2.0\BookService.AssemblyInfoInputs.cache
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\obj\Debug\netcoreapp2.0\BookService.AssemblyInfo.cs
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\obj\Debug\netcoreapp2.0\BookService.dll
+C:\Users\Natasha\Desktop\Юле\ArenaService\ArenaService\obj\Debug\netcoreapp2.0\BookService.pdb

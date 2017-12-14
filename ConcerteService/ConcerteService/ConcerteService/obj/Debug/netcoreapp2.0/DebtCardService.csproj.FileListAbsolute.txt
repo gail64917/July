@@ -1,0 +1,13 @@
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\bin\Debug\netcoreapp2.0\DebtCardService.deps.json
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\bin\Debug\netcoreapp2.0\DebtCardService.runtimeconfig.json
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\bin\Debug\netcoreapp2.0\DebtCardService.runtimeconfig.dev.json
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\bin\Debug\netcoreapp2.0\DebtCardService.dll
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\bin\Debug\netcoreapp2.0\DebtCardService.pdb
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\bin\Debug\netcoreapp2.0\RabbitModels.dll
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\bin\Debug\netcoreapp2.0\RabbitModels.pdb
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\obj\Debug\netcoreapp2.0\DebtCardService.csprojResolveAssemblyReference.cache
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\obj\Debug\netcoreapp2.0\DebtCardService.csproj.CoreCompileInputs.cache
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\obj\Debug\netcoreapp2.0\DebtCardService.AssemblyInfoInputs.cache
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\obj\Debug\netcoreapp2.0\DebtCardService.AssemblyInfo.cs
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\obj\Debug\netcoreapp2.0\DebtCardService.dll
+C:\Users\Natasha\Desktop\Юле\ConcerteService\ConcerteService\ConcerteService\obj\Debug\netcoreapp2.0\DebtCardService.pdb

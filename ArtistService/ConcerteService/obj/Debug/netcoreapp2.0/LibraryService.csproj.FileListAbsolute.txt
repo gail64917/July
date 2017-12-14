@@ -1,0 +1,13 @@
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\bin\Debug\netcoreapp2.0\LibraryService.deps.json
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\bin\Debug\netcoreapp2.0\LibraryService.runtimeconfig.json
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\bin\Debug\netcoreapp2.0\LibraryService.runtimeconfig.dev.json
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\bin\Debug\netcoreapp2.0\LibraryService.dll
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\bin\Debug\netcoreapp2.0\LibraryService.pdb
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\bin\Debug\netcoreapp2.0\RabbitModels.dll
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\bin\Debug\netcoreapp2.0\RabbitModels.pdb
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\obj\Debug\netcoreapp2.0\LibraryService.csprojResolveAssemblyReference.cache
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\obj\Debug\netcoreapp2.0\LibraryService.csproj.CoreCompileInputs.cache
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\obj\Debug\netcoreapp2.0\LibraryService.AssemblyInfoInputs.cache
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\obj\Debug\netcoreapp2.0\LibraryService.AssemblyInfo.cs
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\obj\Debug\netcoreapp2.0\LibraryService.dll
+C:\Users\Natasha\Desktop\Юле\ArtistService\ConcerteService\obj\Debug\netcoreapp2.0\LibraryService.pdb
